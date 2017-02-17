@@ -1,0 +1,24 @@
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.part {
+	background: url(../img/css.png);
+}
+
+@include transitions(0.5s);
+
+@include transitions(2s);

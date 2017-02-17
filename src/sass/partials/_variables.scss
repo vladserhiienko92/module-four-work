@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------- */
+/*  1. Variables
+/* ----------------------------------------------------------- */
+
+$font_proxima_semibold: ;
+$font_proxima_bold: ;
+$font_ptsans: ;
+$white_color: ;
+$white_color_sec: ;
+$bg_color: ;
+$text_color: ;
+
+
+/* ----------------------------------------------------------- */
+/*  2. Mixins
+/* ----------------------------------------------------------- */
+
+@mixin transitions($duration) {
+	-webkit-transition: all $duration ease-in-out;
+	   -moz-transition: all $duration ease-in-out;
+	    -ms-transition: all $duration ease-in-out;
+	     -o-transition: all $duration ease-in-out;
+	        transition: all $duration ease-in-out;
+}
+
+@mixin subheader($color) {
+
+}
+
+@mixin my_button($width, $height, $bg_color, $color) {
+
+}
