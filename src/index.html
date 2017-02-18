@@ -1,28 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 	<head>
 		<meta charset="utf-8">
 		<title>Website Name</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900" rel="stylesheet">
 		<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../bower_components/slick/slick.css">
+		<link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.min.css">
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../bower_components/bootstrap-validator/dist/validator.min.js"></script>
+		<script src="../bower_components/slick/slick.min.js"></script>
 		<script src="js/scripts.min.js"></script>
 	</head>
 	<body>
 		<!-- Header -->
 		<header>
-			
+			<div class="container" id="home">
+				<div class="row">
+					<div class="col-md-12">
+						<a href="#" class="mobile-icon">
+							<i></i>
+						</a>
+						<nav class="menu">
+							<ul>
+								<li class="menu-item">
+									<a href="#">Home</a>
+								</li>
+								<li class="menu-item">
+									<a href="#portfolio">Portfolio</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Blog</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" data-toggle="modal" data-target="#contact-modal">Contact Me</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="logo">
+							<a href="#">Logo</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="header-button">
+							<a href="#portfolio">View photos portfolio</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 		<!-- End of Header -->
 		<!-- Main -->
 		<main>
-			
+			<!-- About Section -->
+			<section id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<h3 class="about-header">About Me</h3>
+						</div>
+						<div class="col-md-8 col-sm-8">
+							<div class="about-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+								</p>
+								<p>sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<button class="about-button" data-toggle="modal" data-target="#contact-modal">Contact me</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End of About Section -->
+			<!-- More Popular Section -->
+			<section id="popular">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4 popular-left">
+							<h3>More Popular</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<p>sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+							<button class="popular-button" data-toggle="modal" data-target="#contact-modal">Contact me</button>
+						</div>
+						<div class="col-md-8 popular-right">
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End of More Popular Section -->
+			<!-- Portfolio Section -->
+			<section id="portfolio">
+				<div class="container">
+					<div class="portfolio-info">
+						<h3>Portfolio</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+						<a href="#portfolio-images" class="portfolio-button">View all portfolio</a>
+					</div>
+				</div>
+				<div class="container-fluid" id="portfolio-images">
+					<div class="row">
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img1.png" alt="portfolio-img1"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img2.png" alt="portfolio-img2"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img3.png" alt="portfolio-img3"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img4.png" alt="portfolio-img4"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img5.png" alt="portfolio-img5"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img6.png" alt="portfolio-img6"></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img12.png" alt="portfolio-img12"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img7.png" alt="portfolio-img7"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img8.png" alt="portfolio-img8"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img9.png" alt="portfolio-img9"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img10.png" alt="portfolio-img10"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img11.png" alt="portfolio-img11"></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img13.png" alt="portfolio-img13"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img14.png" alt="portfolio-img14"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img15.png" alt="portfolio-img15"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img16.png" alt="portfolio-img16"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img18.png" alt="portfolio-img18"></a>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 portfolio-block">
+							<a href="#"><img src="img/portfolio/portfolio-img17.png" alt="portfolio-img17"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End of Portfolio Section -->
+			<!-- Testimonials Section -->
+			<div id="testimonials">
+				<div class="container">
+					<div class="row test-slider">
+						<div class="test-slide">
+							<div class="col-md-7 col-md-offset-1">
+								<div class="quotes">
+									
+								</div>
+								<div class="test-info">
+									<h4>Lorem Ipsum</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+								</div>
+							</div>
+							<div class="col-md-4 test-img">
+								<img src="img/slider-img.png" alt="slider-img">
+							</div>
+						</div>
+						<div class="test-slide">
+							<div class="col-md-7 col-md-offset-1">
+								<div class="quotes">
+									
+								</div>
+								<div class="test-info">
+									<h4>Lorem Ipsum</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+								</div>
+							</div>
+							<div class="col-md-4 test-img">
+								<img src="img/slider-img.png" alt="slider-img">
+							</div>
+						</div>
+						<div class="test-slide">
+							<div class="col-md-7 col-md-offset-1">
+								<div class="quotes">
+									
+								</div>
+								<div class="test-info">
+									<h4>Lorem Ipsum</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+								</div>
+							</div>
+							<div class="col-md-4 test-img">
+								<img src="img/slider-img.png" alt="slider-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of Testimonials Section -->
 		</main>
 		<!-- End of Main -->
 		<!-- Footer -->
 		<footer>
-			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 footer-left">
+						<nav class="menu-footer">
+							<ul>
+								<li class="menu-footer-item">
+									<a href="#home">Home</a>
+								</li>
+								<li class="menu-footer-item">
+									<a href="#portfolio">Portfolio</a>
+								</li>
+								<li class="menu-footer-item">
+									<a href="#">Blog</a>
+								</li>
+								<li class="menu-footer-item">
+									<a href="#" data-toggle="modal" data-target="#contact-modal">Contact Me</a>
+								</li>
+							</ul>
+						</nav>
+						<p>Share Us</p>
+						<div class="social">
+							<ul>
+								<li class="social-item">
+									<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								</li>
+								<li class="social-item">
+									<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								</li>
+								<li class="social-item">
+									<a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-5 footer-right">
+						<h4>Subscribe to News</h4>
+						<form action="#" data-toggle="validator">
+							<input type="email" name="email" class="footer-email" placeholder="Your e-mail">
+							<button type="submit" class="footer-submit">Submit</button>
+						</form>
+						<p>2016 © Lorem Ipsum</p>
+					</div>
+				</div>
+			</div>
 		</footer>
+		<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			    	<div class="modal-header">
+			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        	<h4 class="modal-title">Contact Form</h4>
+			    	</div>
+			    	<div class="modal-body">
+			    		<form action="#" data-toggle="validator">
+			    			<div class="form-group">
+    							<label for="inputName" class="control-label">Name</label>
+    							<input type="text" class="form-control" id="inputName" placeholder="Enter Your Name" required>
+  							</div>
+  							<div class="form-group">
+    							<label for="inputEmail" class="control-label">Email</label>
+    							<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+    							<div class="help-block with-errors"></div>
+  							</div>
+  							<div class="form-group">
+							    <label for="inputPassword" class="control-label">Password</label>
+							    <div class="form-inline row">
+							      <div class="form-group col-sm-6">
+							        <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+							        <div class="help-block">Minimum of 6 characters</div>
+							      </div>
+							      <div class="form-group col-sm-6">
+							        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+							        <div class="help-block with-errors"></div>
+							      </div>
+							    </div>
+							</div>
+			    		</form>
+			    	</div>
+			    	<div class="modal-footer">
+				        <div class="form-group">
+				        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    						<button type="submit" class="btn btn-primary">Submit</button>
+  						</div>
+			    	</div>
+			    </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 		<!-- End of Footer -->
 	</body>
 </html>

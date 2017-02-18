@@ -1,28 +1,30 @@
-/**  
-  
-Main SCSS
-	1. Imports.
-	2. Fonts
-	3. General Styles
-	4. Header
-  
-**/
-
 /* ----------------------------------------------------------- */
-/*  1. Imports
+/*  Imports
 /* ----------------------------------------------------------- */
 
 @import "partials/_variables.scss";
 @import "partials/_header.scss";
+@import "partials/_about.scss";
+@import "partials/_popular.scss";
+@import "partials/_portfolio.scss";
+@import "partials/_test.scss";
+@import "partials/_footer.scss";
+@import "partials/_responsive.scss";
 
 /* ----------------------------------------------------------- */
-/*  2. Fonts.
+/*  Fonts.
 /* ----------------------------------------------------------- */
 
-
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/MyriadPro-Regular.otf')  format('opentype'),
+	     url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf')  format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* ----------------------------------------------------------- */
-/*  3. General Styles.
+/*  General Styles.
 /* ----------------------------------------------------------- */
 
 * {
@@ -32,6 +34,8 @@ Main SCSS
 }
 
 body {
+	font: 300 $text_size $font_family;
+	color: $text_color;
 	margin: 0;
 	padding: 0;
 }
@@ -39,4 +43,15 @@ body {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+button:focus {
+	outline: 0;
 }

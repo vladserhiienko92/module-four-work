@@ -1,18 +1,17 @@
 /* ----------------------------------------------------------- */
-/*  1. Variables
+/*  Variables
 /* ----------------------------------------------------------- */
 
-$font_proxima_semibold: ;
-$font_proxima_bold: ;
-$font_ptsans: ;
-$white_color: ;
-$white_color_sec: ;
-$bg_color: ;
-$text_color: ;
+$font_family: 'Roboto', sans-serif;
+$white_color: #fff;
+$pink_color: #f2385a;
+$blue_color: #36b1bf;
+$text_color: #000;
+$text_size: 14px;
 
 
 /* ----------------------------------------------------------- */
-/*  2. Mixins
+/*  Mixins
 /* ----------------------------------------------------------- */
 
 @mixin transitions($duration) {
@@ -24,9 +23,25 @@ $text_color: ;
 }
 
 @mixin subheader($color) {
-
+	color: $color;
+	font-family: Roboto;
+	font-size: 25px;
+	font-weight: 900;
+	line-height: 19px;
+	text-transform: uppercase;
 }
 
-@mixin my_button($width, $height, $bg_color, $color) {
-
+@mixin my_button($color) {
+	width: 150px;
+	height: 47px;
+	border: 1px solid #d7d7d7;
+	border-radius: 24px;
+	background-color: transparent;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 47px;
+	color: $color;
+	&:hover {
+		background-color: darken(#fff, 20%);
+	}
 }
